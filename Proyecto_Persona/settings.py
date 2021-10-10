@@ -90,10 +90,12 @@ DATABASES = {
     }
 }
  """
+
+ #DB Heroku
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'HOST':'j21q532mu148i8ms.cbetxkdyhwsb.us-east-1.rds.amazonaws.com	',
+        'HOST':'j21q532mu148i8ms.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
         'PORT': '3306',
         'USER': 'aj774l1od0ksg7rx',
         'PASSWORD': 'llgmghb9uw7b6o33',
