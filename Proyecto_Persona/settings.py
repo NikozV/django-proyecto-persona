@@ -75,7 +75,7 @@ WSGI_APPLICATION = 'Proyecto_Persona.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-
+""" 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -89,6 +89,21 @@ DATABASES = {
         },
     }
 }
+ """
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'HOST':'j21q532mu148i8ms.cbetxkdyhwsb.us-east-1.rds.amazonaws.com	',
+        'PORT': '3306',
+        'USER': 'aj774l1od0ksg7rx',
+        'PASSWORD': 'llgmghb9uw7b6o33',
+        'NAME':'pqjof6qnj323za9l',
+        'OPTIONS':{
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
+        },
+    }
+}
+
 
 
 # Password validation
