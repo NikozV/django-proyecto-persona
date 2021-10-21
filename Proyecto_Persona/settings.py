@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'corsheaders',    #instalo app para habilitar los cors
     'api'
 ]
 
@@ -50,8 +51,16 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',  #Indico el middleware del cors
 
 ]
+
+#Creo una lista CORS // origenes permitidos
+CORS_ORIGIN_WHITELIST = (
+    'http://localhost',
+    'http://localhost:3000',
+    'http://localhost:4200',
+)
 
 ROOT_URLCONF = 'Proyecto_Persona.urls'
 
